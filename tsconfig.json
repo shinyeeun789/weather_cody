@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {      // 컴파일할 때 적용되는 옵션들
+    "target": "es6",        // 어떤 버전으로 컴파일할 것인지 작성
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "baseUrl": "./src", // 추가된 것 ./src를 절대 경로로 지정
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx"
+  },
+  "include": [          // 컴파일할 파일 경로 설정
+    "src"
+  ],
+  "exclude": [          // 컴파일에서 제외하는 대상
+    "node_modules"
+  ],
+}
